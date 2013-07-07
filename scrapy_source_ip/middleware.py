@@ -1,5 +1,3 @@
-from scrapy import log
-
 class HttpIpBindMiddleware(object):
     def __init__(self, ip_bind, **kwargs):
         self.ip_bind = ip_bind
@@ -11,7 +9,6 @@ class HttpIpBindMiddleware(object):
             	'BIND_IP_ADDRESS',
 		None
 	    ),
-            logger=lambda message: log.msg(message),
         )
 
     def process_request(self, request, spider):
