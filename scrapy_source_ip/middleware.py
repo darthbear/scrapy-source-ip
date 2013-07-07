@@ -7,7 +7,7 @@ class HttpIpBindMiddleware(object):
         return cls(
             crawler.settings.get(
             	'BIND_IP_ADDRESS',
-		None
+		('0.0.0.0', 0)
 	    ),
         )
 
