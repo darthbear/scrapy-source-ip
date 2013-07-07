@@ -7,6 +7,6 @@ To use it specify in settings.py:
 
 	BIND_IP_ADDRESS="192.168.1.1"
 
-	ITEM_PIPELINES = [
-	    'scrapy_ip_source.middleware.HttpIpBindMiddleware',
+	DOWNLOADER_MIDDLEWARES = [
+    		'scrapy_source_ip.middleware.HttpIpBindMiddleware':1,
 	]
