@@ -12,4 +12,4 @@ class HttpIpBindMiddleware(object):
         )
 
     def process_request(self, request, spider):
-	request.meta['bind_address'] = self.ip_bind
+	request.meta['bindaddress'] = self.ip_bind
